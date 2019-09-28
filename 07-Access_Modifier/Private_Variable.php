@@ -2,13 +2,12 @@
 	
 	class Student1{
 		
+//private property is only for use inside the class
+//private variable can not access/initialize from outside the class		
 		private $stdName = "Ruman Chowdhury";
 		
-		//To use private property outside the class,it should be pass through public class
-		//private property is only for use inside the class
-		public function studentInfo($newName){
-
-			$this->stdName = $newName;
+		
+		public function studentInfo(){
 			
 			return $this->stdName;
 		}

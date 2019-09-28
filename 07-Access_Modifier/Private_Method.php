@@ -2,21 +2,22 @@
 	
 	class Student2{
 		
-		private $stdName;
+		public $stdName;
 		
 		
-		private function studentInfo($newName){
-
-			$this->stdName = $newName;
+		private function setInfo($newName){
 			
-			return $this->stdName;
+			$this->stdName = $newName;
+
 		}
 
 
 		/*to access private method from outside the class,method should be called through public method */
-		public function sendInfo($name){
-	
-			return studentInfo($name);
+		public function getInfo($name){
+			
+			$this->setInfo($name);
+			
+			return $this->stdName;
 
 		}
 

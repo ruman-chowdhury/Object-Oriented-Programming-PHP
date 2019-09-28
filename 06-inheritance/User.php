@@ -5,7 +5,6 @@
 		public $age;
 
 
-
 		public function __construct($username,$userage){
 			$this->name = $username;	//initialize value
 			$this->age = $userage;
@@ -18,8 +17,10 @@
 
 
 		public function displayMessage(){
-			echo "When child class extend parent class,it can access parent's property";
+			echo "Method from User class";
 		}
+
+
 
 
 	}//User class

@@ -17,7 +17,7 @@
 
 
 		public function displayMessage(){
-			echo "When child class extend parent class,it can access parent's property";
+			echo "I am from User(parent class) class.";
 		}
 
 

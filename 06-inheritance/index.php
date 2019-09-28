@@ -1,13 +1,11 @@
 <?php
-	include 'User.php';
 	include 'Customer.php';
 
-	$user_obj = new User("Ruman Chowdhury",25);
-	$user_obj->userDetails();
-
-
-	$customer_obj = new Customer;
-	$customer_obj->displayMessage();
+	//we have no param in Customer class constractor,though we are getting all property from User cls
+	$cs = new Customer("Ruman Chowdhury",25);
+	
+	$cs->userDetails();
+	$cs->displayMessage();
 
 
 

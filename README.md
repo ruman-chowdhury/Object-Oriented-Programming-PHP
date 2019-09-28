@@ -108,3 +108,113 @@ Inheritance is a mechanism in which one sub class can access all the properties 
 Here child class will inherit all or few member functions and variables of a parent class.
 
 In short,Parent class: parent property; Child extends Parent: parent property + child own property;
+
+
+
+07-Access Modifier:
+-------------------
+
+The access modifier is the most important feature of the OO language and it is used to restrict the function and classes to be accessed. The list of the access modifiers are:
+
+i)Public: Class properties and methods, that are set to be public, can be accessed anywhere in the PHP script, in other words everywhere.
+
+ii)Private: Class properties and methods, that are set to be private, can only be accessed within a class, in other words only in which it is defined.
+
+iii)Protected Class properties and method, that are set to be protected, can only be accessed inside the class and by its subclasses, in other words its class and sub classes.
+
+
+08-Polymorphism:
+---------------
+
+Same function can be used for different purposes. For example function name will remain same but it take different number of arguments and can do different task.
+
+In short,
+
+i)If Inheritance occurs
+
+ii) Override a methods with some arguments
+
+Then,we can call it's a Polymorphism.
+
+
+
+
+09-Interface:
+---------------
+
+i)An interface consists of methods that have no implementations, which means the interface methods are abstract methods.
+
+ii)All the methods in interfaces must have public visibility scope.
+
+iii)Interfaces are different from classes as the class can inherit from one class only whereas the class can implement one or more interfaces.
+
+
+In short,Interface class contains method without method body.(Only method declaration).These methods will be implemented in sub-class.
+
+
+
+
+10-Abstract class:
+-------------------
+
+An abstract class cannot be instantiated, can only be inherited by other sub-classes extended from it.
+
+Abstract class must contain at least one abstract method without body and it have to implement in sub-class.
+
+Non-abstract method can also exist.
+
+Abstract class/Interface class doesn't contain any variable, only method exist.
+
+We can't create any object of abstract class.we need to extend to access abstract class.
+
+
+Interface: all methods without body.
+
+Abstract: at least one abstract method + others normal methods.
+
+
+
+
+11-Magic method:
+----------------
+
+PHP provides built-in interceptor methods (also called magic methods), which are automatically executed in some special cases, when are accessed undefined methods and properties. - Magic methods must be defined with "public" attribute.
+
+
+__get(), __set() and  __call()  methods:
+
+
+The __get() and __set() methods are generally used together and are designed for working with properties that are not defined in a class (or its parents).
+
+i)__get($property) - automatically invoked when an undefined property is accessed. __get() method must be defned with one parameter 
+
+ii)__set($property, $value) - automatically invoked when a value is assigned to an undefined property.The __set() must be declared with two arguments.
+ 
+iii)__call($method, $arg_array)method is invoked when an undefined method is called.
+
+ 
+
+
+12-Autoload classes:
+--------------------
+
+__autoload() is also a magic method which includeds all the classes.So we don't need to include all the files manually.
+
+
+
+
+13-Namespaces:
+--------------
+
+Namespaces is used for reduce dependency.Example:
+
+If two or more employee's have same class name then their code will be messed up.To reduce this dependency namespace is used.It it generates folder.
+
+
+
+
+14-Composer:
+------------
+
+Composer is an application-level package manager for the PHP programming language that provides a standard format for managing dependencies of PHP software and required libraries.
+
